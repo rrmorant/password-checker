@@ -7,11 +7,11 @@ const App = () => {
 	const validate = (value) => {
 		if (
 			validator.isStrongPassword(value, {
-				minLength: 8,
-				minLowercase: 1,
-				minUppercase: 1,
-				minNumbers: 1,
-				minSymbols: 1,
+				minLength: 12,
+				minLowercase: 2,
+				minUppercase: 2,
+				minNumbers: 2,
+				minSymbols: 2,
 			})
 		) {
 			setErrorMessage("Is Strong Password");
